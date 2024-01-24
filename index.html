@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins"],
+              roboto: ["Roboto"],
+            },
+            colors: {
+              gray: "#E5E5E5",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <section class="lPage flex">
+      <div class="hidden lg:flex md:flex min-h-full w-[55%] lg:w-[66%] border"> 
+        <img src="/assets/Rectangle 2756.png" alt="Picture" class="object-cover" />
+      </div>
+      <div class="m-auto">
+        <img
+          src="/assets/Logo.png"
+          alt="vision capital"
+          class="hidden md:block sm:mt-10"
+        />
+        <div class="mt-10">
+          <h2 class="font-poppins font-bold text-base">
+            Nice to see you again
+          </h2>
+          <div class="input mt-5">
+            <label for="email" class="hidden lg:block md:block sm:block"
+              >Login</label
+            >
+            <div></div>
+            <input
+              type="email"
+              placeholder="Email or phone number"
+              class="w-full mt-2 mb-2 bg-gray rounded-md h-8 ps-3"
+            />
+            <div></div>
+            <label for="password" class="hidden lg:block md:block sm:block"
+              >Password</label
+            >
+            <div></div>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              class="w-full mt-2 bg-gray rounded-md h-8 ps-3"
+            />
+            <div>
+              <p class="text-right mt-5 mb-5 text-blue-600">
+                <a href="#">Forgot password?</a>
+              </p>
+            </div>
+          </div>
+          <button
+            class="w-full bg-blue-700 text-white font-roboto h-8 rounded-md"
+          >
+            Sign In
+          </button>
+          <hr class="border-gray my-8" />
+          <button
+            class="w-full bg-black text-white font-roboto flex justify-center items-center gap-1 rounded-md h-8"
+          >
+            <img src="/assets/Group 3019.png" alt="google" class="my-1" />
+            Or sign in with google
+          </button>
+          <div class="mt-10">
+            <p class="text-center">
+              Don't have an account?
+              <a href="#" class="text-blue-600">Sign up now</a>
+            </p>
+          </div>
+        </div>
+        <img
+          src="./assets/Logo.png"
+          alt="vision capital"
+          class="mt-10 sm:hidden m-auto"
+        />
+        <div>
+          <p class="text-center mt-14 sm:mt-56">&copy Perfect Login 2021</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
